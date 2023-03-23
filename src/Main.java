@@ -18,13 +18,13 @@ public class Main {
         String leerArchivoResultado = "src/Archivo.de.resultado.txt";
     }
 
-    String leerYComparar(String pathString){
+    public String leerYComparar(String pathString){
         String resultado = "";
         for(String linea:Files.readAllLines(Paths.get(pathString))){
-            if(Float.parseFloat(linea) - Float.parseFloat(linea) > 0){
+            if(Integer.parseInt(linea) - Integer.parseInt(linea) > 0){
                 resultado = "gano";
             }
-            else if(Float.parseFloat(linea) - Float.parseFloat(linea) < 0){
+            else if(Integer.parseInt(linea) - Integer.parseInt(linea) < 0){
                 resultado = "perdio";
             } else{
                 resultado = "empate";
@@ -33,7 +33,4 @@ public class Main {
             }
         System.out.println(resultado);
         }
-
-
-
 }
