@@ -1,0 +1,2 @@
+persona1; argentina; gana
+persona1; camerun; empata
