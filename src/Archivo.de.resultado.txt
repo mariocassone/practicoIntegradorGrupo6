@@ -1,2 +1,4 @@
-persona1; argentina; gana
-persona1; camerun; empata
+equipo1= 0 empate= 1 equipo2= 2
+1
+0
+2

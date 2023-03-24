@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,23 +15,23 @@ public class Main {
         //● Al leer las líneas de los archivos debe instanciar objetos de las clases propuestas
         //● Debe imprimir por pantalla el puntaje de la persona.
 
-        String leerArchivoPartido = "src/Archivo.de.partido.txt";
-        String leerArchivoResultado = "src/Archivo.de.resultado.txt";
-    }
 
-    public String leerYComparar(String pathString){
-        String resultado = "";
-        for(String linea:Files.readAllLines(Paths.get(pathString))){
-            if(Integer.parseInt(linea) - Integer.parseInt(linea) > 0){
-                resultado = "gano";
-            }
-            else if(Integer.parseInt(linea) - Integer.parseInt(linea) < 0){
-                resultado = "perdio";
-            } else{
-                resultado = "empate";
-            }
+        try{
+
+            List<String> archivo = Files.readAllLines(Paths.get("Archivo.de.partido.txt"));
+            for (int i = 0; i < archivo.size(); i++){
+                String[] linea = archivo.get(i).split(";");
+                Partido p1 = new Partido();
+                p1.golesEquipo1 = Integer.parseInt(linea[1]);
+                p1.golesEquipo2 = Integer.parseInt(linea[2]);
+                p1.equipo2 = linea[3];
 
             }
-        System.out.println(resultado);
+
+        } catch (IOException e){
+            System.out.println("error");
+
+        }
+
         }
 }
