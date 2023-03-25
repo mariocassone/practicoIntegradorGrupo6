@@ -3,6 +3,7 @@ public class Partido {
     String equipo2 = "";
     int golesEquipo1;
     int golesEquipo2;
+    int numeroDePartido;
 
     public Partido(String equipo1, int golesEquipo1, int golesEquipo2, String equipo2){
         this.equipo1 = equipo1;
@@ -22,6 +23,9 @@ public class Partido {
     public void cantidadDeGolEquipo2(){
         System.out.println(golesEquipo2);
     }
+    public void setNumeroDePartido(){
+        this.numeroDePartido = numeroDePartido;
+    }
     public void resultadoDelPartido(){
         if(golesEquipo2 > golesEquipo1){
             System.out.println("El equipo ganador es " + equipo2);
@@ -32,8 +36,5 @@ public class Partido {
         else{
             System.out.println("El resultado del partido fue empate");
         }
-
     }
-
-
 }

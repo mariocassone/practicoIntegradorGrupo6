@@ -16,22 +16,19 @@ public class Main {
         //● Debe imprimir por pantalla el puntaje de la persona.
 
 
-        try{
 
+
+        try{
+            Ronda ronda1 = new Ronda();
             List<String> archivo = Files.readAllLines(Paths.get("Archivo.de.partido.txt"));
             for (int i = 0; i < archivo.size(); i++){
-                String[] linea = archivo.get(i).split(";");
-                Partido p1 = new Partido();
-                p1.golesEquipo1 = Integer.parseInt(linea[1]);
-                p1.golesEquipo2 = Integer.parseInt(linea[2]);
-                p1.equipo2 = linea[3];
-
+            String[] linea = archivo.get(i).split(";");
+            Partido p1 = new Partido(linea[0], Integer.parseInt(linea[1]), Integer.parseInt(linea[2]), linea[3]);
+            ronda1.partidos[i] = p1;
             }
-
-        } catch (IOException e){
+        } catch(
+                IOException e) {
             System.out.println("error");
-
         }
-
-        }
+    }
 }
