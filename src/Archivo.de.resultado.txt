@@ -1,4 +1,4 @@
-equipo1= 0 empate= 1 equipo2= 2
-1
-0
-2
+1 // gana equipo1
+0 // Empate
+2 // gana equipo2
+

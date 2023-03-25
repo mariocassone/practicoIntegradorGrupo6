@@ -23,7 +23,7 @@ public class Partido {
     public void cantidadDeGolEquipo2(){
         System.out.println(golesEquipo2);
     }
-    public void setNumeroDePartido(){
+    public void setnumeroDePartido(int numeroDePartido){
         this.numeroDePartido = numeroDePartido;
     }
     public void resultadoDelPartido(){
