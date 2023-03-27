@@ -17,6 +17,6 @@ public class Ronda {
                     resultado = "Empate";
                 }
             }
-        }System.out.println("Es resultado fue: " + resultado);
+        }return resultado;
     }
 }

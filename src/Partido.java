@@ -5,13 +5,13 @@ public class Partido {
     int golesEquipo2;
     int numeroDePartido;
 
-    public Partido(String equipo1, int golesEquipo1, int golesEquipo2, String equipo2){
+    public Partido(){
         this.equipo1 = equipo1;
-        this.equipo2 = equipo2;
         this.golesEquipo1 = golesEquipo1;
         this.golesEquipo2 = golesEquipo2;
+        this.equipo2 = equipo2;
     }
-    public void nombreDelEquipo1(){
+           public void nombreDelEquipo1(){
         System.out.println(equipo1);
     }
     public void nombreDelEquipo2(){
@@ -26,6 +26,7 @@ public class Partido {
     public void setnumeroDePartido(int numeroDePartido){
         this.numeroDePartido = numeroDePartido;
     }
+
     public void resultadoDelPartido(){
         if(golesEquipo2 > golesEquipo1){
             System.out.println("El equipo ganador es " + equipo2);

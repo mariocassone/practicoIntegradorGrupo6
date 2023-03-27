@@ -1,4 +1,2 @@
-1 // gana equipo1
-0 // Empate
-2 // gana equipo2
-
+1
+0

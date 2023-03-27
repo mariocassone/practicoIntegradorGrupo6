@@ -1,7 +1,7 @@
 public class Equipo {
    String nombre;
    String descripcion;
-    public Equipo(String nombre, String descripcion){
+    public Equipo(){
         this.nombre = nombre;
         this.descripcion = descripcion;
     }
