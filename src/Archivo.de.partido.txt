@@ -1,2 +1,2 @@
-argentina;2;croacia;2
-camerun;8;italia;4
+argentina;2;2;inglaterra
+camerun;8;1;rosario

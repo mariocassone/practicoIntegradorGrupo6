@@ -27,15 +27,15 @@ public class Partido {
         this.numeroDePartido = numeroDePartido;
     }
 
-    public void resultadoDelPartido(){
+    public String resultadoDelPartido(){
         if(golesEquipo2 > golesEquipo1){
-            System.out.println("El equipo ganador es " + equipo2);
+            return "2";
         }
         else if(golesEquipo1 > golesEquipo2){
-            System.out.println("El equipo ganador es el " + equipo1);
+            return "1";
         }
         else{
-            System.out.println("El resultado del partido fue empate");
+            return "0";
         }
     }
 }
